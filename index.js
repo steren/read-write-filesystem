@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
     res.end(`Please specify absolute file path to read (GET) or write (POST) as URL path. Current directory is ${process.cwd()}`);
     return;
   }
-  if(filePath === "/favico.ico") {
+  if(filePath === "/favicon.ico") {
     res.end();
     return;
   }
