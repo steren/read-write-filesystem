@@ -13,7 +13,8 @@ const server = http.createServer((req, res) => {
   }
   console.log(`Reading ${filePath}`);
   if (req.method === 'POST') {
-    const contentToWrite = req.body;
+    const currentDate = new Date();
+    const contentToWrite = currentDate.toDateString();
     fs.writeFileSync(filePath, contentToWrite);
   }
   const fileContent = fs.readFileSync(filePath, 'utf8');
