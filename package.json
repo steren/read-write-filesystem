@@ -1,4 +1,7 @@
 {
     "name": "read-write-test-server",
-    "type": "module"
+    "type": "module",
+    "scripts": {
+      "start": "node index.js"
+    }
 }
